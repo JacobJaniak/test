@@ -33,6 +33,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -239,7 +240,7 @@ a {
 }
 
 .btn--accent:hover {
-  background: black;
+  background: rgb(87, 0, 96);
 }
 
 .bnt--stretched {
@@ -651,5 +652,36 @@ a {
   }
   .nav__items {
     border: 0;
+  }
+}
+
+/* Hero */
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-left: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }
