@@ -203,6 +203,7 @@ a {
   display: block;
   margin-bottom: 1rem;
   text-align: center;
+  outline: 0;
 }
 
 .btn--secondary {
@@ -656,6 +657,11 @@ a {
 }
 
 /* Hero */
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
@@ -683,5 +689,104 @@ a {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero__image {
+    margin-left: 0rem;
+  }
+}
+
+/* Domain Block */
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .block-domain .input-group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .block__domain-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+
+/* Grid Plan */
+.grid__plan {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.plan--popular__block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transform: scale(1.2);
+}
+
+.plan--price-usual:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1250px) {
+  .grid__plan {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .plan--popular__block {
+    display: flex;
+    flex-direction: column;
+    transform: scale(1);
+  }
+  .plan--price-usual:hover {
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .plan--price-usual:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+}
+
+@media screen and (min-width: 1251px) {
+  .plan--price-usual:hover {
+    transform: scale(1.2);
+    transition: 0.3s ease;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 }
