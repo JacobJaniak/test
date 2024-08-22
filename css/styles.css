@@ -303,10 +303,14 @@ a {
 }
 
 /* Card */
+
 .card {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .card__header,
@@ -430,6 +434,10 @@ a {
   opacity: 50%;
 }
 
+.quote__block {
+  margin-top: 10rem;
+}
+
 @media screen and (min-width: 1024px) {
   .quote {
     font-size: 2rem;
@@ -450,6 +458,12 @@ a {
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x5 {
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -742,18 +756,13 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10rem;
+  padding-bottom: 10rem;
 }
 
 .plan--popular__block {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  transform: scale(1.2);
-}
-
-.plan--price-usual:hover {
-  transform: scale(1.2);
-  transition: transform 0.3s ease;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1250px) {
@@ -768,26 +777,14 @@ a {
     flex-direction: column;
     transform: scale(1);
   }
-  .plan--price-usual:hover {
-    pointer-events: none;
-  }
-}
-
-@media screen and (max-width: 799px) {
-  .plan--price-usual:hover {
-    transform: scale(1.2);
-    transition: 0.3s ease;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
-  }
 }
 
 @media screen and (min-width: 1251px) {
-  .plan--price-usual:hover {
-    transform: scale(1.2);
-    transition: 0.3s ease;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+  .grid__plan {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto;
   }
 }
 
@@ -795,6 +792,8 @@ a {
 
 .feature__grid {
   margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .media-feature {
@@ -808,6 +807,15 @@ a {
 
 .feature-grid-image {
   width: 100%;
+}
+
+.feature-one {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.feature-bottom {
+  padding-bottom: 10rem;
 }
 
 /* Showcase block */
@@ -828,4 +836,46 @@ a {
 
 .showcase-block-ipad-image {
   width: 100%;
+}
+
+/* Footer */
+.footer-block {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: rgb(44, 44, 44);
+}
+
+.footer-column-products,
+.footer-column-company,
+.footer-column-support,
+.footer-column-domains {
+  margin-right: 5rem;
+}
+
+.list__item-object {
+  color: rgb(138, 138, 138);
+  margin-top: 1rem;
+}
+
+.list__item-header a {
+  color: white;
+}
+
+.list__item-header a:hover,
+.list__item-header a:visited,
+.list__item-header a:active {
+  color: white;
+  cursor: pointer;
+}
+
+.list__item-header {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Footer */
+.footer {
+  background-color: #232323;
 }

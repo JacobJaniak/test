@@ -12,8 +12,273 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <script src="js/main.js"></script>
+
+    <!-- Hero block  -->
+
+    <header>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="">Hosting</a></li>
+          <li class="nav__item"><a href="">VPS</a></li>
+          <li class="nav__item"><a href="">Domain</a></li>
+          <li class="nav__item"><a href="">Contact</a></li>
+        </ul>
+        <script src="main.js"></script>
+      </nav>
+    </header>
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Cloud Hosting for Pros</h1>
+          <p class="hero__tagline">
+            Deploy your websites in less than 60 seconds.
+          </p>
+          <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+        </header>
+        <img class="hero__image" src="images/banner.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Search block  -->
+
+   <section class="block container block-domain">
+      <header class="block__header">
+        <h2>Starting at $9 per month</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam,
+          alias.
+        </p>
+      </header>
+      <div class="input-group">
+      <input type="text" class="input" placeholder="Enter domain name...">
+        <button class="btn btn--accent block__domain-btn">
+          <span>
+          <svg class="search-icon">
+          <use class="search-bar-icon" href="images/sprite.svg#search"></use>
+          </span>search
+        </button>
+    </div>
+    <ul class="list block-domain__prices">
+      <li><span class="badge badge--secondary">.com $9</span></li>
+      <li>.pl $2</li>
+      <li>.space $12</li>
+      <li>.org $9</li>
+      <li>.de $2</li>
+      <li>.uk $1</li>
+    </ul>
+
+<!-- Feature block 1 -->
+
+    <div class="feature__component">
+      <header class="block__header">
+        <h2>Hold On The Cloud To Keep Growing</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam,
+          alias.
+        </p>
+      </header>
+      <div class="body feature__grid grid grid--1x2">
+        <div class="feature__grid-media-object" data-aos="fade-right">
+          <div class="media-feature">
+        <div class="media__image-feature">
+        <svg class="icon icon">
+        <use href="images/sprite.svg#snap"></use>
+        </div>
+            <div class="media__body">
+              <h3 class="media__title">Easy start & Manage Updates</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptatum dignissimos illum a aperiam nulla praesentium quis
+                dicta explicabo mollitia quod.
+              </p>
+              <a href="#" class="link-arrow">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="feature__grid-image-block">
+          <img data-aos="fade-left" class="feature-grid-image" src="images/easy.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+<!-- Feature block 2, image on the left -->
+
+    <div class="feature__component">
+      <header class="block__header">
+        <h2>Hold On The Cloud To Keep Growing</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam,
+          alias.
+        </p>
+      </header>
+      <div class="body feature__grid grid grid--1x2">
+               <div class="feature__grid-image-block">
+          <img class="feature-grid-image" src="images/easy.jpg" alt="">
+        </div>
+        <div class="feature__grid-media-object">
+          <div class="media-feature">
+        <div class="media__image-feature">
+        <svg class="icon icon">
+        <use href="images/sprite.svg#snap"></use>
+        </div>
+            <div class="media__body">
+              <h3 class="media__title">Easy start & Manage Updates</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptatum dignissimos illum a aperiam nulla praesentium quis
+                dicta explicabo mollitia quod.
+              </p>
+              <a href="#" class="link-arrow">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Feature block 3 -->
+
+   <div class="feature__component">
+      <header class="block__header">
+        <h2>Hold On The Cloud To Keep Growing</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam,
+          alias.
+        </p>
+      </header>
+      <div class="body feature__grid grid grid--1x2">
+        <div class="feature__grid-media-object">
+          <div class="media-feature">
+        <div class="media__image-feature">
+        <svg class="icon icon">
+        <use href="images/sprite.svg#snap"></use>
+        </div>
+            <div class="media__body">
+              <h3 class="media__title">Easy start & Manage Updates</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Voluptatum dignissimos illum a aperiam nulla praesentium quis
+                dicta explicabo mollitia quod.
+              </p>
+              <a href="#" class="link-arrow">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="feature__grid-image-block">
+          <img class="feature-grid-image" src="images/easy.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+
+<!-- pricing plan block  -->
+
+   <div class="grid__plan">
+      <div>
+        <div class="plan plan--price-usual">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">Easy start on the plan</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited products</li>
+                <li class="list__item">Best service</li>
+                <li class="list__item">Highest ROI</li>
+              </ul>
+              <button class="btn btn--secondary btn--block">buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="plan plan--popular plan--popular__block">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">Easy start on the plan</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited products</li>
+                <li class="list__item">Best service</li>
+                <li class="list__item">Highest ROI</li>
+              </ul>
+              <button class="btn btn--secondary btn--block">buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="plan plan--price-usual">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badge badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">Easy start on the plan</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited products</li>
+                <li class="list__item">Best service</li>
+                <li class="list__item">Highest ROI</li>
+              </ul>
+              <button class="btn btn--secondary btn--block">buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card testimonial">
+      <div class="grid grid--1x2">
+        <div class="testimonial__image">
+          <img src="images/testimonial.jpg" alt="A happy customer" />
+            <span class="icon-containter icon-containter--accent">
+            <svg class="icon icon--white icon--small">
+            <use href="images/sprite.svg#quotes"></use>
+            </span>
+        </div>
+    <blockquote class="quote">
+              <p class="qoute__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+              reprehenderit?
+              </p>
+              <footer>
+              <div class="media">
+              <div class="media__image">
+              <svg class="icon icon">
+              <use href="images/sprite.svg#line"></use>
+              </div>
+              <div class="media__body">
+              <h3 class="media__title">John Smith</h3>
+              <p class="media__company-title">ABC Company</p>
+              </div>
+              </div>
+              </footer>
+            </blockquote>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
